@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/logo.jpg" type="image/jpg" />
+    <title>Sumarse</title>
+  </head>
+  <body
+    class="min-w-[300px] w-full min-h-screen h-full flex flex-col text-black font-sans bg-gray-200 overflow-x-hidden"
+  >
+    <!-- Header -->
+    <header class="w-full h-full font-dm-sans text-white">
+      <nav
+        class="flex items-center justify-between bg-[#1e1f25] px-4 py-2 h-16"
+      >
+        <div class="flex items-center space-x-4">
+          <a
+            href="index.html"
+            class="text-2xl md:text-3xl font-bold text-white"
+          >
+            Juventud<span class="text-[#bdeb00]">Libertaria</span>
+          </a>
+        </div>
+
+        <ul class="hidden md:flex space-x-6 text-white font-bold">
+          <li>
+            <a href="index.html" class="hover:text-[#bdeb00]">Inicio</a>
+          </li>
+          <li>
+            <a href="portal.html" class="hover:text-[#bdeb00]">Nosotros</a>
+          </li>
+          <li>
+            <a href="sumarse.html" class="hover:text-[#bdeb00]">Unite!</a>
+          </li>
+          <li>
+            <a href="/index.html#Contacto" class="hover:text-[#bdeb00]"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="md:hidden text-black bg-[#bdeb00] p-2 rounded-lg cursor-pointer flex items-center justify-center"
+          id="menu-toggle"
+        >
+          <a href="index.html#hamb">
+            <img src="icons/bx-menu.svg" alt="icono-menu" class="w-6 h-6" />
+          </a>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-[#1e1f25] text-white p-4 rounded-lg space-y-4 md:hidden"
+      >
+        <a href="index.html" class="hover:text-[#bdeb00]">Inicio</a>
+        <a href="nosotros.html" class="hover:text-[#bdeb00]">Nosotros</a>
+        <a href="sumarse.html" class="hover:text-[#bdeb00]">Unite!</a>
+        <a href="#Contacto" class="hover:text-[#bdeb00]">Contacto</a>
+      </div>
+    </header>
+
+    <!-- Form Section -->
+    <section class="container mx-auto px-6 py-12 -mt-4">
+      <form
+        class="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto grid gap-8"
+      >
+        <!-- Encabezado del Formulario -->
+        <div class="text-center">
+          <img
+            src="img/logo.jpg"
+            alt="Logo"
+            class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+          />
+          <h2 class="text-2xl font-semibold text-gray-800">
+            Â¡Ãšnete a Juventud Libertaria!
+          </h2>
+          <p class="text-gray-500 mt-2">
+            Completa el formulario para sumarte al movimiento.
+          </p>
+        </div>
+
+        <!-- Campos del Formulario -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-gray-700"
+              >Nombre completo</label
+            >
+            <input
+              id="nombre"
+              type="text"
+              placeholder="Ingresar nombre completo"
+              class="mt-1 block w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-[#bdeb00] focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="dni" class="block text-sm font-medium text-gray-700"
+              >Documento de identidad</label
+            >
+            <input
+              id="dni"
+              type="number"
+              placeholder="Ingresar documento de identidad"
+              class="mt-1 block w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-[#bdeb00] focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="fecha" class="block text-sm font-medium text-gray-700"
+              >Fecha de nacimiento</label
+            >
+            <input
+              id="fecha"
+              type="date"
+              class="mt-1 block w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-[#bdeb00] focus:outline-none"
+            />
+          </div>
+          <div>
+            <label
+              for="domicilio"
+              class="block text-sm font-medium text-gray-700"
+              >Domicilio</label
+            >
+            <input
+              id="domicilio"
+              type="text"
+              placeholder="Ingresar su domicilio"
+              class="mt-1 block w-full border border-gray-300 rounded-lg py-2 px-4 focus:ring-2 focus:ring-[#bdeb00] focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <!-- Subida de Archivos -->
+        <div
+          class="flex flex-col items-center border border-dashed border-gray-400 rounded-lg py-6 px-4 bg-gray-50"
+        >
+          <label
+            for="file-input"
+            class="text-gray-600 text-center md:font-medium"
+          >
+            Arrastra y suelta un archivo aquÃ­ o haz clic para seleccionar
+          </label>
+          <input id="file-input" type="file" class="hidden" />
+        </div>
+
+        <!-- BotÃ³n de EnvÃ­o -->
+        <button
+          type="submit"
+          class="bg-[#b0d325]/90 text-black font-bold py-5 px-14 rounded hover:bg-[#bdeb00] transition w-auto mx-auto"
+        >
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+        <footer class="bg-[#1e1f25] py-8 sm:py-10 mt-auto">
+      <div class="mx-auto w-full max-w-5xl px-4">
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/tiktok-logo-48.png"
+              alt="Ç?cono de tiktok"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/instagram-logo-48.png"
+              alt="Ç?cono de instagram"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/facebook-logo-48.png"
+              alt="Ç?cono de facebook"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        <p class="text-center text-[#727159] text-sm sm:text-base">
+          <strong>&copy; 2024 - todos los derechos reservados</strong>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+

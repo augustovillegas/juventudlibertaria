@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/logo.jpg" type="image/jpg" />
+    <title>Tienda</title>
+  </head>
+  <body
+    class="min-w-[300px] w-full min-h-screen h-full flex flex-col text-black font-sans bg-gray-200 overflow-x-hidden"
+  >
+    <!-- Header -->
+    <header class="w-full h-full font-dm-sans text-white">
+      <nav
+        class="flex items-center justify-between bg-[#1e1f25] px-4 py-2 h-16"
+      >
+        <div class="flex items-center space-x-4">
+          <a
+            href="index.html"
+            class="text-2xl md:text-3xl font-bold text-white"
+          >
+            Juventud<span class="text-[#bdeb00]">Libertaria</span>
+          </a>
+        </div>
+        <ul class="hidden md:flex space-x-6 text-white font-bold">
+          <li><a href="index.html" class="hover:text-[#bdeb00]">Inicio</a></li>
+          <li>
+            <a href="nosotros.html" class="hover:text-[#bdeb00]">Nosotros</a>
+          </li>
+          <li>
+            <a href="sumarse.html" class="hover:text-[#bdeb00]">Unite!</a>
+          </li>
+          <li>
+            <a href="/index.html#Contacto" class="hover:text-[#bdeb00]"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <div
+          class="md:hidden text-black bg-[#bdeb00] p-2 rounded-lg cursor-pointer flex items-center justify-center"
+          id="menu-toggle"
+        >
+          <a href="index.html#hamb">
+            <img src="icons/bx-menu.svg" alt="icono-menu" class="w-6 h-6" />
+          </a>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-[#1e1f25] text-white p-4 rounded-lg space-y-4 md:hidden"
+      >
+        <a href="index.html" class="hover:text-[#bdeb00]">Inicio</a>
+        <a href="portal.html" class="hover:text-[#bdeb00]">Nosotros</a>
+        <a href="sumarse.html" class="hover:text-[#bdeb00]">Unite!</a>
+        <a href="#Contacto" class="hover:text-[#bdeb00]">Contacto</a>
+      </div>
+    </header>
+
+    <!-- Secci√≥n Tienda -->
+    <main class="py-12 px-6 md:px-12 lg:px-24 -mt-4">
+      <section class="max-w-screen-xl mx-auto">
+        <div class="flex justify-between items-center mb-8">
+          <h1 class="text-2xl md:text-3xl font-bold text-[#3a391b]">
+            Tienda Oficial
+          </h1>
+          <div class="flex items-center space-x-2">
+            <span class="font-bold text-gray-800">Cart</span>
+            <img
+              src="icons/cart-icon.svg"
+              alt="Carrito"
+              class="w-7 h-7 bg-[#bdeb00] p-1 rounded-full"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+          >
+            <img
+              src="img/tienda1.jpg"
+              alt="Camiseta 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-1">
+              <h2 class="text-lg font-bold text-gray-800">Remera Juventud</h2>
+              <p class="text-gray-600 mt-2">
+                Remera oficial Juventud Libertaria. Dise√±o exclusivo.
+              </p>
+              <div class="mt-auto flex justify-between items-center">
+                <span class="font-bold text-black text-lg">$25.00</span>
+                <button
+                  class="bg-[#1e1f25] text-white px-4 py-2 rounded-md hover:bg-[#bdeb00] hover:text-black"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+          >
+            <img
+              src="img/tienda2.jpg"
+              alt="Gorra"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-1">
+              <h2 class="text-lg font-bold text-gray-800">Gorra Libertaria</h2>
+              <p class="text-gray-600 mt-2">
+                Gorra oficial. Ideal para eventos y marchas.
+              </p>
+              <div class="mt-auto flex justify-between items-center">
+                <span class="font-bold text-black text-lg">$15.00</span>
+                <button
+                  class="bg-[#1e1f25] text-white px-4 py-2 rounded-md hover:bg-[#bdeb00] hover:text-black"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+          >
+            <img
+              src="img/tienda1.jpg"
+              alt="Taza"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col flex-1">
+              <h2 class="text-lg font-bold text-gray-800">Taza Juventud</h2>
+              <p class="text-gray-600 mt-2">
+                Taza con el logo oficial. Perfecta para caf√© o t√©.
+              </p>
+              <div class="mt-auto flex justify-between items-center">
+                <span class="font-bold text-black text-lg">$10.00</span>
+                <button
+                  class="bg-[#1e1f25] text-white px-4 py-2 rounded-md hover:bg-[#bdeb00] hover:text-black"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+        <footer class="bg-[#1e1f25] py-8 sm:py-10 mt-auto">
+      <div class="mx-auto w-full max-w-5xl px-4">
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/tiktok-logo-48.png"
+              alt="«?cono de tiktok"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/instagram-logo-48.png"
+              alt="«?cono de instagram"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/facebook-logo-48.png"
+              alt="«?cono de facebook"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        <p class="text-center text-[#727159] text-sm sm:text-base">
+          <strong>&copy; 2024 - todos los derechos reservados</strong>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+

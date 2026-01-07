@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/logo.jpg" type="image/jpg" />
+    <title>Batalla Cultural</title>
+  </head>
+  <body
+    class="min-w-[300px] w-full min-h-screen h-full flex flex-col text-black font-sans bg-gray-200 overflow-x-hidden"
+  >
+    <!-- Header -->
+    <header class="w-full h-full font-dm-sans text-white">
+      <nav
+        class="flex items-center justify-between bg-[#1e1f25] px-4 py-2 h-16"
+      >
+        <div class="flex items-center space-x-4">
+          <a
+            href="index.html"
+            class="text-2xl md:text-3xl font-bold text-white"
+          >
+            Juventud<span class="text-[#bdeb00]">Libertaria</span>
+          </a>
+        </div>
+
+        <ul class="hidden md:flex space-x-6 text-white font-bold">
+          <li>
+            <a href="index.html" class="hover:text-[#bdeb00]">Inicio</a>
+          </li>
+          <li>
+            <a href="portal.html" class="hover:text-[#bdeb00]">Nosotros</a>
+          </li>
+          <li>
+            <a href="sumarse.html" class="hover:text-[#bdeb00]">Unite!</a>
+          </li>
+          <li>
+            <a href="/index.html#Contacto" class="hover:text-[#bdeb00]"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="md:hidden text-black bg-[#bdeb00] p-2 rounded-lg cursor-pointer flex items-center justify-center"
+          id="menu-toggle"
+        >
+          <a href="index.html#hamb">
+            <img src="icons/bx-menu.svg" alt="icono-menu" class="w-6 h-6" />
+          </a>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-[#1e1f25] text-white p-4 rounded-lg space-y-4 md:hidden"
+      >
+        <a href="index.html" class="hover:text-[#bdeb00]">Inicio</a>
+        <a href="nosotros.html" class="hover:text-[#bdeb00]">Nosotros</a>
+        <a href="sumarse.html" class="hover:text-[#bdeb00]">Unite!</a>
+        <a href="#Contacto" class="hover:text-[#bdeb00]">Contacto</a>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto px-4 py-8">
+      <section class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-[#3a391b] mb-4 -mt-4">
+          Batalla Cultural<span class="text-[#bdeb00]">!</span>
+        </h1>
+        <p class="text-lg font-semibold text-gray-600 -mb-5">
+          Donde la juventud libertaria defiende los principios de libertad,
+          justicia y progreso.
+        </p>
+      </section>
+
+      <section class="grid gap-12">
+        <!-- ¿Qué es la Batalla Cultural? -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-bold text-[#bdeb00] mb-4">
+            ¿Qué es la Batalla Cultural?
+          </h2>
+          <p class="text-gray-600">
+            Es el espacio donde la juventud libertaria da a conocer sus ideas,
+            acciones y pensamientos, defendiendo los principios de libertad,
+            justicia, y progreso.
+          </p>
+        </div>
+
+        <!-- Acciones de la Juventud -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-bold text-[#bdeb00] mb-4">
+            Acciones de la Juventud
+          </h2>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Organización de debates abiertos.</li>
+            <li>Crear contenido educativo en redes sociales.</li>
+            <li>Actividades comunitarias y de concientización.</li>
+          </ul>
+        </div>
+
+        <!-- Galería Multimedia -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-bold text-[#bdeb00] mb-6 text-center">
+            Galería Multimedia
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <iframe
+              class="w-full h-48 rounded"
+              src="https://www.youtube.com/embed/example1"
+              title="Video 1"
+            ></iframe>
+            <iframe
+              class="w-full h-48 rounded"
+              src="https://www.youtube.com/embed/example2"
+              title="Video 2"
+            ></iframe>
+            <iframe
+              class="w-full h-48 rounded"
+              src="https://www.youtube.com/embed/example3"
+              title="Video 3"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Participa en la Batalla -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+          <h2 class="text-2xl font-bold text-[#bdeb00] mb-4">
+            Participa en la Batalla
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Si compartes nuestros valores y crees en la importancia de difundir
+            las ideas de la libertad, únete a nuestra causa. ¡Sé parte del
+            cambio!
+          </p>
+          <a href="sumarse.html">
+            <button
+              class="bg-[#b0d325]/90 text-black font-semibold px-6 py-2 rounded-lg hover:bg-[#bdeb00]"
+            >
+              Participar
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+        <footer class="bg-[#1e1f25] py-8 sm:py-10 mt-auto">
+      <div class="mx-auto w-full max-w-5xl px-4">
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/tiktok-logo-48.png"
+              alt="�?cono de tiktok"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/instagram-logo-48.png"
+              alt="�?cono de instagram"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="bg-[#3a391b] rounded-full flex justify-center items-center w-10 h-10 sm:w-[45px] sm:h-[45px] p-2 sm:p-[10px] transition-transform duration-300 ease-in-out cursor-pointer hover:scale-110 hover:bg-[#bdeb00]"
+          >
+            <img
+              src="icons/facebook-logo-48.png"
+              alt="�?cono de facebook"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        <p class="text-center text-[#727159] text-sm sm:text-base">
+          <strong>&copy; 2024 - todos los derechos reservados</strong>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
